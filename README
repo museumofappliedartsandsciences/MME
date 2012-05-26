@@ -1,0 +1,9 @@
+This is the codebase for Museum Metadata Exchange, a consumer and
+provider of collection metadata.
+
+Requirements are Ubuntu 10.04 LTS with apache2, php5 and mysql.
+
+The supplied apache vhost config has rewrites that must be used.
+
+Rename config/config.sample.inc to config/config.inc and enter
+database settings there.
