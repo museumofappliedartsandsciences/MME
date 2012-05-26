@@ -1,0 +1,155 @@
+body {
+    background: #ddd;
+}
+
+#blocker-panel form {
+    width: 782px;
+}
+
+#blocker-panel input[type=text] {
+    width: 424px;
+    margin-right: 8px;
+}
+
+.cancel {
+    float: right;
+}
+
+.term {
+    margin: 8px 8px 8px 0;
+    border: 1px solid #666;
+    position: relative;
+    min-height: 64px;
+    box-shadow: 1px 1px 5px #aaa;
+    background: #fff;
+}
+
+
+.term h3 {
+    margin: 0 0 8px 0;
+    background: #444;
+    color: #fff;
+    position: relative;
+}
+
+.term.approved h3 {
+    background: #369;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.00, #369), color-stop(1.00, #036));  
+    background: -moz-linear-gradient(top, #369, #039);
+}
+
+.term h3 input[type="button"] {
+    position: absolute;
+    top: 1px;
+    right: 1px;
+}
+
+.term h3 a {
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.term h3 a:hover {
+    text-decoration: underline;
+}
+
+.term h4 {
+    color: #666;
+    margin: 4px 8px;
+}
+
+.term p {
+    margin: 4px 8px;
+}
+
+.term p.notes {
+    margin: 8px 8px;
+}
+
+.term ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.term p.relation {
+    line-height: 100%;
+}
+
+.term p.relation strong {
+    margin: 0 8px 0 0;
+    background: #eee;
+    padding: 6px 8px;
+    text-align: center;
+    color: #000;
+    text-decoration: none;
+}
+
+.term p.relation a {
+    margin: 0 4px 0 0;
+    background: #444;
+    padding: 6px 8px;
+    text-align: center;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.term p a span {
+    display: inline-block;
+    padding: 12px 8px;
+}
+
+.term p a:hover {
+    color: #cc0;
+}
+
+
+#blocker {
+    display: block;
+    filter: alpha(opacity = 55);
+    opacity: 0.55;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    z-index: 254;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#blocker-panel {
+    display: block;
+    width: 800px;
+    height: 600px;
+    background: #fff;
+    z-index: 255;
+    border: 8px solid #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    box-shadow: 0 0 16px rgba(0, 0, 0, .5);
+    -moz-box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 0 16px rgba(0, 0, 0, .5); 
+    overflow: auto;
+}
+
+#blocker-panel a.close {
+    float: right;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 32px;
+    height: 32px;
+}
+
+#blocker-panel.lightbox {
+    width: 640px;
+    height: 640px;
+    background: #000;
+    border: none;
+    cursor: pointer;
+}

@@ -1,0 +1,55 @@
+<registryObject group="MME">
+<key>http://museumex.org</key>
+
+<originatingSource>
+http://services.ands.org.au/sandbox/orca/register_my_data
+</originatingSource>
+
+<service type="search-http" dateModified="2011-03-16T04:49:00Z">
+
+<name type="primary">
+<namePart type="title">Museum Metadata Exchange</namePart>
+</name>
+
+<location>
+
+<address>
+
+<electronic type="url">
+<value> http://museumex.org </value>
+</electronic>
+</address>
+</location>
+
+<description type="brief">
+
+The MME is an aggregator service which provides a finding aid for researchers and
+others by describing collections held by Museums and other collecting institutions in
+Australia. The service gives an overview of the collection and details of the holding
+institution.
+
+</description>
+
+<description type="full">
+
+The Museum Metadata Exchange (MME) project is a joint project of the Council of
+Australasian Museum Directors (CAMD) and Museums Australia which has been set
+up with support from the Australian National Data Service (ANDS).
+
+The MME is an aggregator service for the contributing museums and organisations. It
+provides data in a standard format (RIF-CS) and transports this data to the Australian
+Research Data Commons (ARDC). This same XML feed can also be downloaded by
+others interested in the data.
+
+The project is funded by ANDS to ensure that collection level descriptions are added
+to Research Data Australia to be used and explored by academic researchers. The
+research community, through the Humanities, Arts and Social Sciences (HASS)
+researchers, will be involved in the evaluation of the initial collections and search
+terms and this review will inform future developments and collections contributed
+to the MME. This will ensure that, for the first time, many museum collections of
+
+particular interest HASS researchers will be readily discoverable through the ARDC.
+
+</description>
+</service>
+</registryObject>

@@ -1,0 +1,35 @@
+.formbox input[type=text] {
+    margin-right: 8px;
+}
+
+.formbox select {
+    margin-right: 8px;
+}
+
+.formbox input[type=text].new {
+    width: 128px;
+}
+
+.formbox ul input[type=text] {
+    width: 200px;
+}
+
+h3 {
+    list-style: none;
+    margin: 8px 0 4px 208px;
+    padding: 0;
+}
+
+ul.options {
+    list-style: none;
+    margin: 16px 0 4px 208px;
+    padding: 0;
+}
+
+.add {
+    margin-left: 208px;
+}
+
+a.picker {
+    margin-left: 8px;
+}

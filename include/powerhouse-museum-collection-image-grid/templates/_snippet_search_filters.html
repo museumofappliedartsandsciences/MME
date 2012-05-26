@@ -1,0 +1,7 @@
+<p class='filter_search' >
+	<!-- <label   for="{% input_name %}">{% label %}:</label><br/>-->
+	<select  name="phm-image-grid-field-{% id %}" >{% fields %}</select>
+	<select  name="phm-image-grid-filter-{% id %}" >{% filters %}</select>
+	<input   name="phm-image-grid-value-{% id %}" type="text" value="{% value %}"/>
+	<a href="#" id="remove_filter" name="{% id %}">Delete</a>
+</p>

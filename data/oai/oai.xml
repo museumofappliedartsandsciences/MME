@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- registry objects list --> 
+
+<registryObjects>
+
+<!-- begin registry object 1 -->
+
+<registryObject>
+
+<key>
+http://hdl.handle.net/102.100.100/12345
+</key>
+
+<originatingSource type="authoritative">
+Powerhouse Museum
+</originatingSource>
+
+<!-- begin activity object --> 
+
+<activity type="project">
+<dateAccessioned>
+2008-10-20T13:00:00Z
+</dateAccessioned>
+<dateModified>
+2008-11-20T13:00:00Z
+</dateModified>
+
+<!-- identifier --> 
+
+<identifier type="local">
+MME0000002
+</identifier>
+<identifier type="purl">
+http://hdl.handle.net/102.100.100/232323
+</identifier>
+
+<!-- name --> 
+
+<name type="primary">
+<namePart>Museum Metadata Exchange Project</namePart>
+</name>
+<name type="alternate"><namePart>
+MuseumEx
+</namePart></name>
+<name type="abbreviated"><namePart>MME</namePart>
+</name>
+
+<!-- location --> 
+
+<location><address>
+<electronic type="url"><value>
+http://www.museumex.net.au</value></electronic>
+<electronic type="email"><value>info@museumex.net.au</value>
+</electronic>
+</address>
+</location>
+
+<!-- subject --> 
+
+
+<subject type="anzsrc-for" xml:lang="en">2202</subject>
+<subject type="anzsrc-for" xml:lang="en">2203</subject>
+<subject type="anzsrc-seo" xml:lang="en">950302</subject>
+<subject type="anzsrc-seo" xml:lang="en">950303</subject>
+<subject type="anzsrc-seo" xml:lang="en">950503</subject>
+
+<!-- description --><description type="brief">Initial Year: 2010. Duration: 1 year. Project Status: Current. Funding: This project is supported by the Australian National Data Service (ANDS). ANDS is supported by the Australian Government through the National Collaborative Research Infrastructure Strategy Program and the Education Investment Fund (EIF) Super Science Initiative.</description>
+
+<description type="brief">The primary aim of this project is to establish and populate a Metadata Exchange with Collection Level Descriptions of cultural and historical collections conforming to the RIF-CS schema for delivery into the Australian Research Data Commons (ARDC).  The project is funded by ANDS and will run: 1 July 2010 - 30 June 2011. This project aims to greatly improve the discoverability and utility of museum collections for Humanities, Arts and Social Sciences (HASS) researchers using the Australian Research Data Commons (ARDC). The project will establish new infrastructure and promote new practices of benefit to both researchers and the museums, and even more importantly, provides a space to increase research collaborations between them. Powerhouse Museum in conjunction with the Council of Australasian Museum Directors and Museums Australia are the project partners. The Powerhouse Museum is the lead agency and will administer the contract and lead the project on behalf of the partners with the Australian National Data Service.</description>
+
+<!-- relatedObject --> 
+
+
+<relatedObject>
+<key>
+http://nla.gov.au/nla.party-573769</key>
+<relation type="isManagedBy">
+<description>Powerhouse Museum</description>
+</relation>
+</relatedObject>
+
+<relatedObject>
+<key>
+http://nla.gov.au/nla.party-xxxxx</key>
+<relation type="isFundedBy">
+<description>Australian National Data Service</description>
+</relation>
+</relatedObject>
+
+
+<!-- end activity object --> 
+
+
+
+</activity>
+
+<!-- end registry object 1 -->
+
+
+
+</registryObject>
+
+
+
+<!-- begin registry object 2 --> 
+
+<registryObject>
+
+<key>
+http://hdl.handle.net/102.100.100/12345
+</key>
+
+<originatingSource type="authoritative">Powerhouse Museum
+</originatingSource>
+
+<!-- begin collection object --> 
+
+<collection type="collection">
+<dateAccessioned>
+2008-10-20T13:00:00Z
+</dateAccessioned>
+<dateModified>
+2008-11-20T13:00:00Z
+</dateModified>
+
+<!-- identifier --> 
+
+
+<identifier type="local">
+MME0000001
+</identifier>
+<identifier type="purl">
+http://hdl.handle.net/102.100.100/121212
+</identifier>
+<identifier type="uri">
+http://www.powerhousemuseum.com/heddamorrison/
+</identifier>
+
+<!-- name --> 
+
+<name type="primary">
+<namePart>Hedda Morrison Collection</namePart>
+</name>
+<name type="alternate">
+<namePart>Alastair and Hedda Morrison Collection
+</namePart></name>
+<name type="abbreviated">
+<namePart>HM Collection</namePart>
+</name>
+
+
+<!-- subject --> 
+
+
+<subject type="local">
+Toggles | Netsuke | Photographs
+</subject>
+
+<subject type="local">
+British Empire | Chinese Culture
+</subject>
+
+<subject type="local">
+Chinese Peoples | Chinese Temples | Domestic Life
+</subject>
+
+<subject type="scot">
+Modernism
+</subject>
+
+
+
+<!-- description --> 
+
+<description type="brief">
+A large archive of Hedda (Hammer) Morrison (1908 - 1991) containing photographs, personal memorabilia and collected objects.</description>
+<description type="full">
+The collection primarily comprises 349 exhibition prints that were made by Hedda after she settled in Canberra in 1967. The prints include photographs that she took in China, Sarawak and Australia, where Hedda lived for extended periods, as well as other countries that she visited for shorter periods. The collection also includes 165 slides of Asia, New Zealand and Australia, and a group of negatives of the Trachenfest folk festival taken by Hedda in Stuttgart in 1931, which are the only known photographs that Hedda produced in Germany. A collection of personal papers and objects that were collected by Hedda and Alastair, notably Chinese papercuts and toggles, also forms part of the collection.
+</description>
+<description type="significance">
+Hedda Morrison's images contribute to the large body of professional and amateur photographs of China taken by Westerners in the period leading up to the establishment of the People's Republic of China. These photographs represent thin slices of space and time and contribute to a collective memory. Through their choice and presentation of subject matter, the photographers constructed their own image of China, which was primarily for Western audiences.
+</description>
+<description type="rights">
+The collection has a mix of material in the public domain and under copyright.  
+</description>
+<description type="accessRights">
+Some material in the collection is only accessible by permission of the descendants of Hedda and Alastair Morrison.   
+</description>
+<description type="note">
+A portion of the collection is catalogued at item level and available online.  
+</description>
+
+<!-- relatedObject --> 
+
+<relatedObject>
+<key>
+http://hdl.handle.net/102.100.100/76543</key>
+<relation type="isPartOf">
+<description>Powerhouse Museum Collection</description>
+</relation>
+</relatedObject>
+
+<relatedObject>
+<key>
+http://nla.gov.au/nla.party-573769</key>
+<relation type="isManagedBy">
+<description>Powerhouse Museum</description>
+</relation>
+</relatedObject>
+
+<relatedObject>
+<key>
+http://hdl.handle.net/102.100.100/45678</key>
+<relation type="hasOverlapWith">
+<description>Netsuke Collection</description>
+</relation>
+</relatedObject>
+
+<relatedObject>
+<key>
+http://hdl.handle.net/102.100.100/87654</key>
+<relation type="hasOverlapWith">
+<description>Asian Decorative Arts Collection</description>
+</relation>
+</relatedObject>
+
+
+
+<!-- coverage --> 
+
+<coverage>
+
+<!-- coverage temporal --> 
+
+<temporal>
+<date type="text">
+The Fifties
+</date>
+<date type="text">
+19th Century
+</date>
+<date type="dateFormat">
+W3C
+</date>
+<date type="from">
+1955-06-20
+</date>
+<date type="to">
+1960
+</date>
+</temporal>
+
+<!-- coverage spatial --> 
+
+
+<spatial type="text">
+Beijing, China
+</spatial>
+<spatial type="text">
+Peking, China
+</spatial>
+<spatial type="text">
+Hong Kong, China
+</spatial>
+<spatial type="dcmiPoint">
+name=Beijing; north=39.9; east=116.4
+</spatial>
+<spatial type="dcmiPoint">
+name=Hong Kong north=22.3 east=114.16
+</spatial>
+<spatial type="iso1939dcmiBox">
+name=Beijing; northlimit=40.3; southlimit=39.6; westlimit=115.8; eastlimit=116.9
+</spatial>
+<spatial type="iso1939dcmiBox">
+name=Hong Kong; northlimit=22.8  southlimit=21.99 westlimit=113.5 eastlimit=114.6
+</spatial>
+</coverage>
+
+<!-- end collection object --> 
+
+
+</collection>
+
+<!-- end registry object 2 --> 
+
+</registryObject>
+
+
+
+
+
+<!-- begin registry object 3 --> 
+
+
+
+<registryObject>
+
+
+
+<key>
+http://hdl.handle.net/102.100.100/12345
+</key>
+
+<originatingSource type="authoritative">
+Powerhouse Museum
+</originatingSource>
+
+
+
+<!-- begin party object --> 
+
+<party type="group">
+<dateAccessioned>
+2008-10-20T13:00:00Z
+</dateAccessioned>
+<dateModified>
+2008-11-20T13:00:00Z
+</dateModified>
+
+
+
+<!-- identifier --> 
+
+
+
+<identifier type="local">
+MME0000003
+</identifier>
+
+<!-- name --> 
+
+<name type="primary">
+<namePart>Powerhouse Museum</namePart>
+</name>
+<name type="alternate">
+<namePart>Museum of Applied Arts and Science</namePart>
+</name>
+<name type="abbreviated">
+<namePart>PHM</namePart>
+</name>
+
+
+
+<!-- location --> 
+
+
+
+<location><address><electronic type="url"><value>
+http://www.powerhousemuseum.com/
+</value></electronic><electronic type="email"><value>enquiries@phm.gov.au 
+</value></electronic>
+<physical type="streetAddress">
+
+<addressPart type="streetName">500 Harris Street</addressPart>
+<addressPart type="suburbOrPlaceOrLocality">Ultimo</addressPart>
+<addressPart type="stateOrTerritory">New South Wales</addressPart>
+<addressPart type="postCode">2000</addressPart>
+<addressPart type="country">Australia</addressPart>
+</physical>
+
+<physical type="postalAddress">
+
+<addressPart type="postalDeliveryNumberValue">P O Box K346</addressPart>
+<addressPart type="suburbOrPlaceOrLocality">Haymarket</addressPart>
+<addressPart type="stateOrTerritory">New South Wales</addressPart>
+<addressPart type="postCode">1238</addressPart>
+<addressPart type="country">Australia</addressPart>
+
+</physical></address></location>
+
+<!-- subject -->
+
+<subject type="anzsrc-for" xml:lang="en">2202</subject>
+<subject type="anzsrc-for" xml:lang="en">2203</subject>
+<subject type="anzsrc-seo" xml:lang="en">950302</subject>
+<subject type="anzsrc-seo" xml:lang="en">950303</subject>
+<subject type="anzsrc-seo" xml:lang="en">950503</subject>
+
+
+<!-- description --> 
+
+<description type="brief">The Powerhouse Museum, part of the Museum of Applied Arts and Sciences, presents exhibitions and programs based on the ideas and technologies that have changed our world, and the stories of the people who inspire and create them.  Our purpose is to enable visitors to discover and be inspired by human ingenuity. The Powerhouse Museum is located in Darling Harbour, Sydney. Its diverse collection, built up over more than 125 years, spans history, science, technology, design, industry, decorative arts, music, transport and space exploration. The Museum has an extensive range of education services, operates a members organisation and a volunteer program.</description>
+
+
+<description type="logo">http://www.powerhousemuseum.com/logo.jpg 
+</description>
+
+
+
+
+
+
+
+<!-- relatedObject --> 
+
+<relatedObject>
+<key>
+http://hdl.handle.net/102.100.100/12345</key>
+<relation type="manages">
+<description>Hedda Morrison Collection</description>
+</relation>
+</relatedObject>
+
+
+
+<relatedObject>
+<key>
+http://hdl.handle.net/102.100.100/76543</key>
+<relation type="manages">
+<description>Powerhouse Museum Collection</description>
+</relation>
+</relatedObject>
+
+
+<relatedObject>
+<key>
+http://hdl.handle.net/102.100.100/232323</key>
+<relation type="manages">
+<description>Museum Metadata Exchange Project</description>
+</relation>
+</relatedObject>
+
+
+<relatedObject>
+<key>
+http://hdl.handle.net/102.100.100/58585</key>
+<relation type="manages">
+<description>Museum Metadata Exchange Project</description>
+</relation>
+</relatedObject>
+
+
+
+
+<!-- end party object --> 
+
+
+
+</party>
+
+
+<!-- end registry object 3 --> 
+
+
+
+</registryObject>
+
+
+
+<!-- begin registry object 4 --> 
+
+
+
+<registryObject>
+
+
+
+
+<!-- begin service object -->
+
+
+<service type="
+search-http">
+<dateAccessioned>
+2008-10-20T13:00:00Z
+</dateAccessioned>
+<dateModified>
+2008-11-20T13:00:00Z
+</dateModified>
+
+<!-- identifier --> 
+
+
+<identifier type="local">
+MME0000005
+</identifier>
+<identifier type="purl">
+http://hdl.handle.net/102.100.100/58585
+</identifier>
+
+<!-- name --> 
+
+<name type="primary">
+<namePart>Museum Metadata Exchange</namePart>
+</name>
+<name type="alternate">
+<namePart>MuseumEx</namePart>
+</name>
+<name type="abbreviated"><namePart>MME</namePart>
+</name>
+
+<!-- location --> 
+
+
+
+<location><address>
+<electronic type="url"><value>
+http://www.museumex.net.au</value></electronic>
+<electronic type="email"><value>info@museumex.net.au</value>
+</electronic>
+</address>
+</location>
+
+
+<!--  description --> 
+
+<description type="brief">The Museum Metadata Exchange aggregates collection Level Descriptions of cultural and historical collections conforming to the RIF-CS schema for delivery into the Australian Research Data Commons (ARDC) and other collection data aggregating services.</description> 
+
+
+<!-- subject -->
+
+<subject type="anzsrc-for" xml:lang="en">2202</subject>
+<subject type="anzsrc-for" xml:lang="en">2203</subject>
+<subject type="anzsrc-seo" xml:lang="en">950302</subject>
+<subject type="anzsrc-seo" xml:lang="en">950303</subject>
+<subject type="anzsrc-seo" xml:lang="en">950503</subject>
+
+
+<!-- relatedObject --> 
+
+<relatedObject>
+<key>
+http://nla.gov.au/nla.party-573769</key>
+<relation type="isManagedBy">
+<description>Powerhouse Museum</description>
+</relation>
+</relatedObject>
+
+<!-- end service object --> 
+
+</service>
+
+<!-- end registry object 4 --> 
+
+</registryObject>
+
+<!-- end registry objects list --> 
+
+</registryObjects>
+

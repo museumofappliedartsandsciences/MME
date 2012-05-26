@@ -1,0 +1,25 @@
+#masthead {
+	width: 960px;
+	margin: auto;
+}
+
+#masthead h1 {
+	background: #222;
+	color: #fff;
+	padding: 9px;
+	margin: 0;
+}
+
+#masthead h1 a:link,
+#masthead h1 a:visited {
+	color: #fff;
+	text-decoration: none;
+}
+
+#masthead h1 a:hover {
+	text-decoration: underline;
+}
+
+#masthead p {
+	text-align: right;
+}

@@ -1,0 +1,4 @@
+.formbox {
+	background: #eee;
+	padding: 3pt;
+}

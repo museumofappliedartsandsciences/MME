@@ -1,0 +1,3 @@
+table#validation tr td {
+	vertical-align: top;
+}

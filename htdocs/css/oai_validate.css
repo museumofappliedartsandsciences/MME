@@ -1,0 +1,6 @@
+table#validation tr td {
+	vertical-align: top;
+	border-bottom: 1px solid #ddd;
+	background: #eee;
+	padding: 4px;
+}

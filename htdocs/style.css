@@ -1,0 +1,463 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    overflow-y: scroll;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+fieldset, img {
+    border: 0;
+}
+
+address, caption, cite, code, dfn, em, strong, th, var {}
+
+ol, ul {
+}
+
+caption, th {
+    text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: bold;
+}
+
+q:before, q:after {
+    content: '';
+}
+
+abbr, acronym {
+    border: 0;
+}
+
+/* defaults for regular html */
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 10pt;
+    color: #000;
+    background: #fff;
+}
+
+body#popup {
+    background: #fff;
+    text-align: left;
+}
+
+body#print {
+    background: #fff;
+    text-align: left;
+}
+
+h1 {
+    font-size: 16pt;
+    margin: 0 0 0.66em 0;
+}
+
+h2 {
+    font-size: 13pt;
+    margin: 0.66em 0;
+}
+
+h3 {
+    font-size: 10pt;
+    margin: 0.66em 0;
+}
+
+h4 {
+    font-size: 10pt;
+    margin: 0.66em 0;
+}
+
+p {
+    margin: 0.66em 0;
+}
+
+a {
+    text-decoration: underline;
+    color: #000;
+}
+
+a:active {
+    text-decoration: underline;
+    color: #c00;
+}
+
+a:hover {
+    color: #009ada;
+    text-decoration: none;
+}
+
+ul {
+    margin: 8px 0 8px 16px;
+    padding: 0;
+}
+
+code {
+    font-family: courier, monospace;
+    background: #222;
+    color: #0c0;
+    line-height: 120%;
+    padding: 4px;
+    display: block;
+    margin: 8px 0;
+}
+
+form {
+    margin: 0;
+    padding: 0;
+}
+
+
+input[type=text], 
+input[type=password],
+textarea {
+    border-top: 1px solid #abadb3;
+    border-right: 1px solid #dbdfe6;
+    border-bottom: 1px solid #e3e9ef;
+    border-left: 1px solid #e3e9ef;
+    padding: 4px;
+}
+
+input[type=submit], input[type=button] {
+    padding: 4px;
+}
+
+select {
+    padding: 4px;
+}
+
+textarea {
+    padding: 4px;
+}
+
+/* moz prevent border around flash */
+object { 
+    outline: none;
+}
+
+/* for clearing floating divs */
+.clear {
+    clear: both;
+}
+
+/* custom inline styles */
+
+.alert {
+    color: #c00;
+}
+
+.hilite {
+    background: #ff6;
+}
+
+/* template structure */
+
+#background {
+}
+
+#structure {
+    margin: 0 auto 8px auto;
+    width: 960px;
+}
+
+#content {
+    padding: 0;
+    margin: 0;
+    min-height: 512px;
+    height: auto !important;/* IE6 */
+    height: 512px;/* IE6 */
+}
+
+/* footer */
+
+#footer {
+    background: #009ada;
+    color: #fff;
+    padding: 8px;
+    margin: auto;
+    text-align: right;
+}
+
+#footer a {
+    color: #fff;
+}
+
+/* web-app UI elements */
+
+#controller {
+    margin: 0 auto 4px auto;
+    background: #ddd;
+    color: #000;
+    -moz-border-radius: 4px;
+    padding: 2px;
+}
+
+#controller table {
+    height: 32px;
+    width: 100%;
+}
+
+#controller td {
+    vertical-align: middle;
+    padding: 2px;
+}
+
+#controller h1 {
+    color: #000;
+    margin: 2px 0 0;
+    font-size: 10pt;
+}
+
+#controller a {
+    color: #000;
+}
+
+#selector {
+    background: #eee;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    padding: 2px;
+}
+
+#selector h1 {
+    font-size: 10pt;
+}
+
+#selector a {
+}
+
+
+#selector table {
+    width: 100%;
+    height: 32px;
+}
+
+#selector table td {
+    padding: 2px;
+}
+
+#selector select {
+    padding: 4px;
+}
+
+/* dataset */
+
+.dataset {
+    margin: 8px 0 16px 0;
+}
+
+.dataset table {
+    width: 100%;
+}
+
+.dataset table td {
+    vertical-align: top;
+    padding: 8px;
+}
+
+.dataset table td a {
+    color: #000;
+}
+
+.dataset table td.dataset-numeric {
+    text-align: right;
+}
+
+.dataset table thead td {
+    font-weight: bold;
+    vertical-align: middle;
+    background: #009ada;
+    color: #fff;
+}
+
+.dataset table thead tr td a:link,
+.dataset table thead tr td a:visited {
+    color: #fff;
+}
+
+.dataset tbody tr td {
+    border-bottom: 1px solid #009ada;
+}
+
+.dataset tfoot td {
+}
+
+/* formbox */
+
+/* formbox common */
+
+.formbox {
+    padding: 8px;
+}
+
+.formbox h2 {
+    padding-top: 8px;
+}
+
+.formbox h2 a {
+    color: #000;
+}
+
+.formbox ul li {
+    line-height: 140%;
+}
+
+.formbox label.formbox-mandatory:before {
+    content: "*";
+    color: #c00;
+}
+
+.formbox label.formbox-invalid {
+    display: block;
+    color: #c00;
+}
+
+.formbox label.formbox-invalid:before {
+    content: "";
+}
+
+.formbox input[type="text"], 
+.formbox input[type="password"] {
+    width: 400px;
+}
+
+.formbox select {
+    padding: 4px;
+}
+
+.formbox textarea {
+    padding: 4px;
+    width: 684px;
+    min-height: 96px;
+}
+
+.formbox input[type="checkbox"] {
+    margin: 8px 8px 0 0;
+}
+
+.formbox input[type="radio"] {
+    margin: 8px 8px 0 0;
+}
+
+.formbox fieldset {
+    border: 1px solid #ddd;
+    margin: 8px;
+    padding: 8px;
+}
+
+.formbox fieldset legend {
+}
+
+/* formbox semantic */
+
+.formbox p {
+    padding: 4px 0;
+    margin: 4px 0 0 0;
+    line-height: 140%;
+}
+
+.formbox>p:after {
+    /* clearfix */
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.formbox p>label {
+    width: 40%;
+    max-width: 200px;
+    display: block;
+    float: left;
+    font-weight: bold;
+    padding: 4px 0 0 0;
+    margin: 0 8px 0 0;
+}
+
+.formbox label a {
+    font-weight: normal;
+}
+
+/* for ul of multiple options */
+
+.formbox ul.formbox-multiple {
+    width: 200px;
+    display: block;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+.formbox ul.formbox-multiple li {
+    margin: 6px 0;
+}
+
+.formbox ul.formbox-multiple li input[type=radio] {
+    display: inline;
+    margin: 0 4px 0 0;
+}
+
+.formbox ul.formbox-multiple li input[type=checkbox] {
+    display: inline;
+    margin: 0 4px 0 0;
+}
+
+.formbox ul.formbox-multiple li label {
+    display: inline;
+    margin: auto;
+    float: none;
+    font-weight: normal;
+}
+
+/* formbox table */
+
+.formbox table {
+    width: 100%;
+}
+
+.formbox table tr td {
+    vertical-align: top;
+    padding: 4px;
+}
+
+.formbox table td:first-child {
+    width: 200px;
+}
+
+.formbox table td p {
+    padding: 4px 0;
+}
+
+/* multiple option ul */
+
+.formbox table tr td ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.formbox table tr td ul li {
+    margin: 4px 0;
+    padding: 0;
+}
+
+.formbox table tr td ul li input {
+    float: left;
+    margin-top: 6px;
+}
+
+.formbox table tr td ul li label {
+    display: inline;
+    font-weight: normal;
+}

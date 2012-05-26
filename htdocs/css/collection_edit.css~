@@ -1,0 +1,3 @@
+div.formbox-tool input[type=submit] {
+    padding: 4px 0;
+}

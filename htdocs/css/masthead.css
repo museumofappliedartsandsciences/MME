@@ -1,0 +1,50 @@
+#masthead {
+    position: relative;
+    margin: auto;
+    height: 218px;
+    width: 960px;
+    background: url(/images/masthead.png) left bottom no-repeat;
+}
+
+#masthead h1 {
+    background: #fff;
+    color: #000;
+    padding: 9px;
+    margin: 0;
+    height: 24px;
+}
+
+#masthead h1 a:link,
+#masthead h1 a:visited {
+    color: #231f20;
+    text-decoration: none;
+}
+
+#masthead h1 a:hover {
+    text-decoration: underline;
+}
+
+#masthead p {
+    text-align: right;
+}
+
+#user {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 437px;
+    margin: 0;
+    font-size: 9pt;
+    background: #231f20;
+    height: 42px;
+    color: #fff;
+}
+
+#user p {
+    margin: 0;
+    padding: 12px 12px 0 0;
+}
+
+#user a {
+    color: #fff;
+}

@@ -1,0 +1,21 @@
+#content {
+    padding: 24px 0;
+    margin-right: 416px;
+    line-height: 140%;
+    min-height: 556px;
+}
+
+#content h1 {
+    color: #009ada;
+}
+
+#structure {
+    position: relative;
+}
+
+#sidebar {
+    position: absolute;
+    top: 256px;
+    right: 64px;
+    width: 256px;
+}

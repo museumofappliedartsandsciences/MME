@@ -1,0 +1,308 @@
+#path {
+    background: #231f20;
+    padding: 12px 8px;
+    margin: 0;
+    position: relative;
+    color: #fff;
+}
+
+#path a {
+    color: #fff;
+}
+
+#path h3 {
+    margin: 0;
+}
+
+#path strong {
+    position: absolute;
+    top: 12px;
+    right: 8px;
+}
+
+#front {
+    background: url(/images/front-bg.png) top left repeat-y;
+}
+
+#sidebar {
+    display: inline;
+    width: 300px;
+    background: #009ada;
+    float: left;
+    margin: 0;
+}
+
+#sidebar ul {
+    margin: 8px;
+    padding: 8px 0;
+    list-style: none;
+}
+
+#sidebar ul li {
+    margin: 4px 0;
+    padding: 0;
+}
+
+#sidebar ul li a {
+    padding: 8px 32px 8px 8px;
+    position: relative;
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+}
+
+#sidebar ul li a em {
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    width: 32px;
+    height: 32px;
+    display: block;
+    background: url(/images/count.png) center no-repeat;
+    text-align: center;
+    color: #231f20;
+}
+
+#sidebar ul li a em span {
+    display: block;
+    padding: 8px 0;
+    text-align: center;
+}
+
+#sidebar ul li a:hover {
+    background: #4cb8e5;
+    text-decoration: none;
+}
+
+#data {
+    margin: 0 0 0 300px;
+}
+
+
+.formbox {
+    padding: 8pt;
+    margin: 0 0 8px 0;
+    position: relative;
+}
+
+.dataset {
+    margin: 0 0 8px 0;
+}
+
+td.dataset-tool {
+    vertical-align: middle;
+    text-align: right;
+    width: 80px;
+}
+
+.dataset td.dataset-numeric {
+    vertical-align: middle;
+}
+
+#header {
+    background: #231f20;
+    color: #fff;
+    margin-bottom: 0;
+}
+
+#header a {
+    color: #fff;
+}
+
+#header p {
+    margin: 8px 0 8px 0;
+    width: 400px;
+    float: left;
+}
+
+#header ul {
+    list-style: none;
+    width: 200px;
+    float: right;
+}
+
+table#formbox-tools {
+    width: auto;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+
+div.formbox-tool {
+    width: 96px;
+    float: right;
+    text-align: right;
+}
+
+.formbox td.formbox-tool:first-child {
+    width: auto;
+}
+
+.formbox td.formbox-tool {
+    text-align: center;
+    vertical-align: middle;
+    padding: 0 16px;
+}
+
+.dataset tbody td h3 {
+    margin: 0 0 3pt 0;
+    font-size: 14pt;	
+}
+
+.dataset tbody td h3 a {
+    text-decoration: none;
+    color: #231f20;
+    padding: 4pt 1pt;
+}
+
+.dataset tbody td h3 a:hover {
+    text-decoration: underline;
+}
+
+.dataset tbody td h4 {
+    margin: 0;
+    font-size: 10pt;	
+}
+
+.dataset tbody td h4 a {
+    text-decoration: none;
+    padding: 4pt 1pt;
+}
+
+.dataset tbody td h4 a:hover {
+    text-decoration: underline;
+}
+
+.dataset tbody td h4.preview a {
+    color: #777;
+}
+
+.dataset tbody td h4.archive a {
+    color: #700;
+}
+
+
+
+h2 {
+    margin: 0;
+    font-size: 14pt;
+    margin: 0;
+}
+
+
+h2 a {
+    display: block;
+    color: #231f20;
+    text-decoration: none;
+    padding: 4px 0;
+}
+
+.collection {
+    padding: 8px;
+    margin: 0;
+    background: url(/images/sidebar-bg.png) left repeat-y;
+}
+
+.collection h2 {
+    margin: 0;
+    font-size: 11.5pt;
+    text-transform: uppercase;
+    margin: 0;
+    color: #fff;
+    width: 186px;
+    text-align: right;
+}
+
+.collection p label {
+    color: #fff;
+    width: 180px;
+    margin-right: 28px;
+    text-align: right;
+}
+
+.formbox td h2 a {
+    text-decoration: none;
+    color: #231f20;
+}
+
+.collection h3 {
+    margin-left: 1em;
+}
+
+.collection p {
+    margin-left: 3pt;
+}
+
+.collection p.description {
+}
+
+.collection p span {
+    display: block;
+    margin-left: 208px;
+    padding-top: 6px;
+}
+
+.meta {
+    background: #efefef;
+    border: 1px solid #ccc;
+    padding: 3pt;
+}
+
+.collection ul {
+    list-style: none;
+}
+
+.collection ul.names {
+    list-style: disc;
+    margin: auto 20px;
+}
+
+.collection ul.names li {
+    margin: 3pt 0;
+}
+
+.collection ul li {
+    margin: 12px 0;
+}
+
+.collection ul li span {
+    background: #ddd;
+    margin: 8px;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.meta h4 {
+    margin: 6pt auto auto 1em;
+    color: #555;
+}
+
+.meta ul {
+    margin: 8px 0 4px 1em;
+    padding: 4px;
+}
+
+.collection ul.subjects li {
+    display: inline;
+    padding: 4px;
+    background: #ddd;
+    cursor: pointer;
+    line-height: 200%;
+}
+
+
+.collection ul.coverage li {
+    display: inline;
+    padding: 0;
+    line-height: 200%;
+    margin: 0;
+    background: #ddd;
+    cursor: pointer;
+}
+
+.collection ul.coverage li span {
+    margin: 0
+}
+
+
