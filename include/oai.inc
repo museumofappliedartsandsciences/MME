@@ -678,9 +678,292 @@ function oai_subjects_clean_orphans ()
 
 function oai_subjects ()
 {
-  
-  $sql = "SELECT DISTINCT(type) AS type FROM collection_subject ";		
+ 
+  $sql = "SELECT DISTINCT(type) AS type FROM collection_subject ";
   $r = db_exec_keys ( $sql, 'type' );
+  return $r;
+
+}
+
+function oai_xml_validate ( $f )
+{
+
+  $r = array();
+  $r['error'] = false;
+  $collections = 0;
+
+  $xml = @simplexml_load_file( $f );
+
+  if ( ! $xml )
+    {
+      $r['error'][] = 'Could not load XML - it is empty or malformed';
+      return $r;
+    }
+
+  // determine type of xml file
+
+  //var_dump ( $xml );
+
+
+  if ( isset ( $xml->ListRecords ) )
+    {
+      // KES variant
+      return oai_xml_validate_kes_oai ( $f );
+    }
+
+  // default
+  return oai_xml_validate_mme_oai ( $f );
+
+  return false;
+
+}
+
+
+function oai_xml_validate_mme_oai ( $f )
+{
+
+  $r = array();
+  $r['error'] = false;
+  $collections = 0;
+
+  $xml = @simplexml_load_file( $f );
+
+
+  // $xml = new SimpleXMLElement( $s );  
+  $foo = $xml->xpath('/registryObjects');
+
+
+  if ( $foo === false )
+    {
+      $r['error'][] = 'No registryObjects';
+      return $r;
+    }
+
+  $objs = $xml->xpath('/registryObjects/registryObject');
+  
+  if ( $objs === false || sizeof ( $objs ) == 0 )
+    {
+      $r['error'][] = 'No registryObject found ';
+      return $r;
+    }
+
+  while ( list ( $k, $obj ) = each ( $objs ) )
+    {
+      if ( sizeof ( $obj->collection ) == 0 )
+        {
+          // no collection in this registryObject
+          continue;
+        }
+
+      foreach ( $obj->collection as $collection ) 
+        {
+          if ( ( $collection['type'] ) == 'collection' )
+            {
+
+              $collections ++;
+
+              $c = array();
+
+              $c['date_accessioned'] = trim ( $collection->dateAccessioned );
+              $c['date_modified'] = trim ( $collection->dateModified );
+
+              foreach ($collection->identifier as $id )
+                {
+                  $c['id_' . $id['type']] = trim ( $id );
+                }
+
+              foreach ($collection->name as $name )
+                {
+                  $c['name_' . $name['type']] = trim ( $name->namePart );
+                }
+
+              $c['subjects'] = array();
+              foreach ($collection->subject as $subject ) 
+                {
+                  $subject_a = str_replace ( ' |', '|', trim ( $subject ) );
+                  $subject_a = str_replace ( '| ', '|', $subject_a );	
+                  $subject_a = explode ( '|', $subject_a );
+
+                  if ( is_array ( $c['subjects'][trim ($subject['type'] )] ) )
+                    {
+                      $subject_a = array_merge ( $c['subjects'][trim ($subject['type'] )], $subject_a );
+                    }
+                  $c['subjects'][trim ($subject['type'] )] = $subject_a;
+                }
+
+
+              foreach ($collection->description as $description )
+                {
+                  if ( $description['type'] == 'accessRights' ) {
+                    $description['type'] = 'access';
+                  }
+                  $c['description_' . $description['type']] = trim ( $description );
+                }
+
+              $c['related'] = false;
+
+              if ($collection->relatedObject ) 
+                {
+                  foreach ($collection->relatedObject as $relatedObject ) 
+                    {
+                      $rob = array();
+                      $rob['key'] = trim ( $relatedObject->key );
+                      $rob['type'] = trim ( $relatedObject->relation['type'] );
+                      $rob['description'] = trim ( $relatedObject->relation->description );
+                      $c['related'][] = $rob;
+                    }
+                }
+
+              if ( $collection->coverage->temporal->date )
+                {
+                  foreach ($collection->coverage->temporal->date as $date ) 
+                    {
+                      $c['coverage']['temporal'][trim ( $date['type'] )][] = trim ( $date );
+                    }
+                }
+
+              if ( $collection->coverage->spatial )
+                {
+                  foreach ($collection->coverage->spatial as $loc )
+                    {
+                      $c['coverage']['spatial'][trim ( $loc['type'] )][] = trim ( $loc );
+                    }
+                }
+            }
+          $r['collection'][] = $c;
+        }
+    }
+
+  if ( $collections == 0 )
+    {
+      $r['error'][] = 'No collections found';
+    }
+
+  return $r;
+
+}
+
+function oai_xml_validate_kes_oai ( $f )
+{
+
+  $r = array();
+  $r['error'] = false;
+  $collections = 0;
+
+  $xml = @simplexml_load_file( $f );
+  $objs = array();
+  foreach ( $xml->ListRecords->record as $record )
+    {
+      $header = $record->header;
+      $obj = $record->metadata->registryObjects->registryObject;
+
+      if ( sizeof ( $obj->collection ) == 0 )
+        {
+          // no collection in this registryObject
+          continue;
+        }
+
+      $objs[] = $obj;
+    }
+
+  if ( $objs === false || sizeof ( $objs ) == 0 )
+    {
+      $r['error'][] = 'No registryObject found ';
+      return $r;
+    }
+
+  while ( list ( $k, $obj ) = each ( $objs ) )
+    {
+      if ( sizeof ( $obj->collection ) == 0 )
+        {
+          // no collection in this registryObject
+          continue;
+        }
+
+      foreach ( $obj->collection as $collection )
+        {
+          if ( ( $collection['type'] ) == 'collection' )
+            {
+
+              $collections ++;
+
+              $c = array();
+
+              $c['date_accessioned'] = trim ( $collection->dateAccessioned );
+              $c['date_modified'] = trim ( $collection->dateModified );
+
+              foreach ($collection->identifier as $id )
+                {
+                  $c['id_' . $id['type']] = trim ( $id );
+                }
+
+              foreach ($collection->name as $name )
+                {
+                  $c['name_' . $name['type']] = trim ( $name->namePart );
+                }
+
+              $c['subjects'] = array();
+              foreach ($collection->subject as $subject ) 
+                {
+                  $subject_a = str_replace ( ' |', '|', trim ( $subject ) );
+                  $subject_a = str_replace ( '| ', '|', $subject_a );	
+                  $subject_a = explode ( '|', $subject_a );
+
+                  if ( is_array ( $c['subjects'][trim ($subject['type'] )] ) )
+                    {
+                      $subject_a = array_merge ( $c['subjects'][trim ($subject['type'] )], $subject_a );
+                    }
+                  $c['subjects'][trim ($subject['type'] )] = $subject_a;
+                }
+
+
+              foreach ($collection->description as $description )
+                {
+                  if ( $description['type'] == 'accessRights' ) {
+                    $description['type'] = 'access';
+                  }
+                  $c['description_' . $description['type']] = trim ( $description );
+                }
+
+              $c['related'] = false;
+
+              if ($collection->relatedObject ) 
+                {
+                  foreach ($collection->relatedObject as $relatedObject ) 
+                    {
+                      $rob = array();
+                      $rob['key'] = trim ( $relatedObject->key );
+                      $rob['type'] = trim ( $relatedObject->relation['type'] );
+                      $rob['description'] = trim ( $relatedObject->relation->description );
+                      $c['related'][] = $rob;
+                    }
+                }
+
+              if ( $collection->coverage->temporal->date )
+                {
+                  foreach ($collection->coverage->temporal->date as $date ) 
+                    {
+                      $c['coverage']['temporal'][trim ( $date['type'] )][] = trim ( $date );
+                    }
+                }
+
+              if ( $collection->coverage->spatial )
+                {
+                  foreach ($collection->coverage->spatial as $loc )
+                    {
+                      $c['coverage']['spatial'][trim ( $loc['type'] )][] = trim ( $loc );
+                    }
+                }
+            }
+          $r['collection'][] = $c;
+        }
+    }
+
+  if ( $collections == 0 )
+    {
+      $r['error'][] = 'No collections found';
+    }
+
   return $r;
 
 }
