@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd">
+ <responseDate>2012-07-14T09:47:01Z</responseDate>
+ <request verb="ListRecords" metadataPrefix="rif">http://grattan.mel.kesoftware.com/ws/oai/index.php</request>
+ <ListRecords>
+  <record>
+   <header>
+    <identifier>oai:powerhousemuseum.com:eparties/30962</identifier>
+    <datestamp>2012-06-08T18:37:00Z</datestamp>
+   </header>
+   <metadata>
+    <registryObjects xmlns="http://ands.org.au/standards/rif-cs/registryObjects" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ands.org.au/standards/rif-cs/registryObjectshttp://services.ands.org.au/home/orca/schemata/1.2.0/registryObjects.xsd">
+     <registryObject group="Powerhouse Museum">
+      <originatingSource type="authoritative">http://www.powerhousemuseum.com/</originatingSource>
+      <key>eparties/30962</key>
+      <party type="group">
+       <name type="primary">
+        <namePart>Powerhouse Museum</namePart>
+       </name>
+       <name type="abbreviated">
+        <namePart>PHM</namePart>
+       </name>
+       <name type="alternate">
+        <namePart>Museum of Applied Arts and Science</namePart>
+       </name>
+       <location>
+        <address>
+         <electronic type="url">http://www.powerhousemuseum.com</electronic>
+         <electronic type="email">enquiries@phm.gov.au</electronic>
+         <physical type="streetAddress">
+          <addressPart type="streetName">500 Harris Street</addressPart>
+          <addressPart type="suburbOrPlaceOrLocality">Ultimo</addressPart>
+          <addressPart type="stateOrTerritory">New South Wales</addressPart>
+          <addressPart type="postCode">2000</addressPart>
+          <addressPart type="country">Australia</addressPart>
+         </physical>
+        </address>
+       </location>
+       <description type="brief">The Powerhouse Museum, part of the Museum of Applied Arts and Sciences, presents exhibitions and programs based on the ideas and technologies that have changed our world, and the stories of the people who inspire and create them. Our purpose is to enable visitors to discover and be inspired by human ingenuity. The Powerhouse Museum is located in Darling Harbour, Sydney. Its diverse collection, built up over more than 125 years, spans history, science, technology, design, industry, decorative arts, music, transport and space exploration. The Museum has an extensive range of education services, operates a members organisation and a volunteer program.</description>
+      </party>
+     </registryObject>
+    </registryObjects>
+   </metadata>
+  </record>
+  <record>
+   <header>
+    <identifier>oai:powerhousemuseum.com:ecollectiondescriptions/3</identifier>
+    <datestamp>2012-06-08T11:45:00Z</datestamp>
+   </header>
+   <metadata>
+    <registryObjects xmlns="http://ands.org.au/standards/rif-cs/registryObjects" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ands.org.au/standards/rif-cs/registryObjectshttp://services.ands.org.au/home/orca/schemata/1.2.0/registryObjects.xsd">
+     <registryObject group="Powerhouse Museum">
+      <originatingSource type="authoritative">http://www.powerhousemuseum.com/</originatingSource>
+      <key>ecollectiondescriptions/3</key>
+      <collection type="collection">
+       <identifier type="local">ecollectiondescriptions/3</identifier>
+       <name type="primary">
+        <namePart>Chinese Collection</namePart>
+       </name>
+       <relatedObject>
+        <key>ecollectiondescriptions/1</key>
+        <relation type="isPartOf">
+         <description>Hedda Morrison Collection</description>
+        </relation>
+       </relatedObject>
+      </collection>
+     </registryObject>
+    </registryObjects>
+   </metadata>
+  </record>
+  <record>
+   <header>
+    <identifier>oai:powerhousemuseum.com:ecollectiondescriptions/4</identifier>
+    <datestamp>2012-06-08T11:45:00Z</datestamp>
+   </header>
+   <metadata>
+    <registryObjects xmlns="http://ands.org.au/standards/rif-cs/registryObjects" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ands.org.au/standards/rif-cs/registryObjectshttp://services.ands.org.au/home/orca/schemata/1.2.0/registryObjects.xsd">
+     <registryObject group="Powerhouse Museum">
+      <originatingSource type="authoritative">http://www.powerhousemuseum.com/</originatingSource>
+      <key>ecollectiondescriptions/4</key>
+      <collection type="collection">
+       <identifier type="local">ecollectiondescriptions/4</identifier>
+       <name type="primary">
+        <namePart>Asian Decorative Arts Collection</namePart>
+       </name>
+      </collection>
+     </registryObject>
+    </registryObjects>
+   </metadata>
+  </record>
+  <record>
+   <header>
+    <identifier>oai:powerhousemuseum.com:ecollectiondescriptions/2</identifier>
+    <datestamp>2012-06-08T16:53:00Z</datestamp>
+   </header>
+   <metadata>
+    <registryObjects xmlns="http://ands.org.au/standards/rif-cs/registryObjects" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ands.org.au/standards/rif-cs/registryObjectshttp://services.ands.org.au/home/orca/schemata/1.2.0/registryObjects.xsd">
+     <registryObject group="Powerhouse Museum">
+      <originatingSource type="authoritative">http://www.powerhousemuseum.com/</originatingSource>
+      <key>ecollectiondescriptions/2</key>
+      <collection type="collection">
+       <identifier type="local">ecollectiondescriptions/2</identifier>
+       <name type="primary">
+        <namePart>Netsuke Collection</namePart>
+       </name>
+       <relatedObject>
+        <key>ecollectiondescriptions/1</key>
+        <relation type="hasPart">
+         <description>Hedda Morrison Collection</description>
+        </relation>
+       </relatedObject>
+      </collection>
+     </registryObject>
+    </registryObjects>
+   </metadata>
+  </record>
+  <record>
+   <header>
+    <identifier>oai:powerhousemuseum.com:ecollectiondescriptions/1</identifier>
+    <datestamp>2012-06-08T17:47:00Z</datestamp>
+   </header>
+   <metadata>
+    <registryObjects xmlns="http://ands.org.au/standards/rif-cs/registryObjects" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ands.org.au/standards/rif-cs/registryObjectshttp://services.ands.org.au/home/orca/schemata/1.2.0/registryObjects.xsd">
+     <registryObject group="Powerhouse Museum">
+      <originatingSource type="authoritative">http://www.powerhousemuseum.com/</originatingSource>
+      <key>ecollectiondescriptions/1</key>
+      <collection type="collection">
+       <identifier type="local">ecollectiondescriptions/1</identifier>
+       <name type="primary">
+        <namePart>Hedda Morrison Collection</namePart>
+       </name>
+       <subject type="pont">Toggles</subject>
+       <subject type="local">Netsuke</subject>
+       <subject type="local">Photographs</subject>
+       <subject type="scot">Chinese culture</subject>
+       <subject type="apt">Domestic life</subject>
+       <subject type="apt">Modernism</subject>
+       <description type="brief">A large archive of Hedda (Hammer) Morrison (1908 - 1991) containing photographs, personal memorabilia and collected objects.</description>
+       <description type="full">The collection primarily comprises 349 exhibition prints that were made by Hedda after she settled in Canberra in 1967. The prints include photographs that she took in China, Sarawak and Australia, where Hedda lived for extended periods, as well as other countries that she visited for shorter periods. The collection also includes 165 slides of Asia, New Zealand and Australia, and a group of negatives of the Trachenfest folk festival taken by Hedda in Stuttgart in 1931, which are the only known photographs that Hedda produced in Germany. A collection of personal papers and objects that were collected by Hedda and Alastair, notably Chinese papercuts and toggles, also forms part of the collection.</description>
+       <description type="rights">The collection has a mix of material in the public domain and under copyright.</description>
+       <description type="accessRights">Some material in the collection is only accessible by permission of the descendants of Hedda and Alastair Morrison.</description>
+       <description type="significanceStatement">Hedda Morrison's images contribute to the large body of professional and amateur photographs of China taken by Westerners in the period leading up to the establishment of the People's Republic of China. These photographs represent thin slices of space and time and contribute to a collective memory. Through their choice and presentation of subject matter, the photographers constructed their own image of China, which was primarily for Western audiences.</description>
+       <description type="note">A portion of the collection is catalogued at item level and available online.</description>
+       <relatedObject>
+        <key>ecollectiondescriptions/2</key>
+        <relation type="isPartOf">
+         <description>Netsuke Collection</description>
+        </relation>
+       </relatedObject>
+       <relatedObject>
+        <key>ecollectiondescriptions/3</key>
+        <relation type="hasPart">
+         <description>Chinese Collection</description>
+        </relation>
+       </relatedObject>
+       <relatedObject>
+        <key>ecollectiondescriptions/4</key>
+        <relation type="hasAssociationWith">
+         <description>Asian Decorative Arts Collection</description>
+        </relation>
+       </relatedObject>
+       <coverage>
+        <temporal>
+         <date type="text">The Fifties;19th Century</date>
+         <date type="dateFrom" dateFormat="W3CDTF">1955-06-20</date>
+         <date type="dateTo" dateFormat="W3CDTF">1960-07-14</date>
+        </temporal>
+       </coverage>
+      </collection>
+     </registryObject>
+    </registryObjects>
+   </metadata>
+  </record>
+  <record>
+   <header>
+    <identifier>oai:powerhousemuseum.com:ecollectiondescriptions/5</identifier>
+    <datestamp>2012-06-08T17:47:00Z</datestamp>
+   </header>
+   <metadata>
+    <registryObjects xmlns="http://ands.org.au/standards/rif-cs/registryObjects" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ands.org.au/standards/rif-cs/registryObjectshttp://services.ands.org.au/home/orca/schemata/1.2.0/registryObjects.xsd">
+     <registryObject group="Powerhouse Museum">
+      <originatingSource type="authoritative">http://www.powerhousemuseum.com/</originatingSource>
+      <key>ecollectiondescriptions/5</key>
+      <collection type="collection">
+       <identifier type="local">ecollectiondescriptions/5</identifier>
+       <name type="primary">
+        <namePart>Illustrations of China</namePart>
+       </name>
+       <subject type="pont">Toggles</subject>
+       <subject type="local">Photographs</subject>
+       <subject type="scot">Chinese culture</subject>
+       <subject type="scot">Domestic life</subject>
+       <description type="brief">This collection consists of volumns 1 to 4 of the publication, 'Illustrations of China and Its People: A series of Two Hundred Photographs with Letterpress Descriptive of Places and People Represented', by John Thomson FRGS, in four volumes, published by Sampson Low, Marston, Low and Searle, Chiswick Press, printed by Whittingham and Wilkins, London, England, 1873-1874</description>
+       <description type="rights">The material is in the public domain.</description>
+       <description type="accessRights">By appointment only.</description>
+       <description type="significanceStatement">In 1877 at the age of 40 John Thompson published Street Life in London the work which made him famous in England. This book was co-authored with Adolphe Smith and was the first major sociological text of British life to be illustrated with photographs. Throughout the twentieth century this work overshadowed much of Thomson's earlier work, particularly the time he had spent travelling through Thailand, Cambodia, Vietnam and China from 1862 to 1872. During his stay there Thomson travelled by elephant, boat, horse, salon chair, and rickshaw covering thousands of kilometres and as a result he was often the first to photograph the extraordinary scenes he witnessed.</description>
+       <description type="note">A portion of the collection is catalogued at item level and available online.</description>
+       <relatedObject>
+        <key>ecollectiondescriptions/1</key>
+        <relation type="hasAssociationWith">
+         <description>Hedda Morrison Collection</description>
+        </relation>
+       </relatedObject>
+       <coverage>
+        <temporal>
+         <date type="dateFrom" dateFormat="W3CDTF">1869-07-14</date>
+         <date type="dateTo" dateFormat="W3CDTF">1872-07-14</date>
+        </temporal>
+       </coverage>
+      </collection>
+     </registryObject>
+    </registryObjects>
+   </metadata>
+  </record>
+ </ListRecords>
+</OAI-PMH>
